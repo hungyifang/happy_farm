@@ -14,6 +14,7 @@ import 'package:happy_farm/pages/setting.dart';
 import 'package:happy_farm/pages/bullpen.dart';
 import 'package:happy_farm/pages/gallery.dart';
 import 'package:happy_farm/pages/register.dart';
+import 'package:happy_farm/pages/recruit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -97,6 +98,13 @@ class MyApp extends StatelessWidget {
                   page: () {
                     return RegisterPage();
                   },
+                ),
+                GetPage(
+                  name: '/recruit',
+                  page: () {
+                    return RecruitPage();
+                  },
+                  
                 ),
               ]);
         }
